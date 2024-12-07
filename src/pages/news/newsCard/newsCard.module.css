@@ -1,0 +1,155 @@
+.cards {
+  margin-top: 20px;
+
+  display: grid;
+
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+
+  grid-auto-rows: auto;
+
+  grid-gap: 5rem;
+}
+
+.card {
+  max-width: 390px;
+
+  background: white;
+  border-radius: 10px;
+  transition: 0.2s ease-in-out;
+  direction: rtl;
+}
+@media (max-width: 700px) {
+  .card {
+    margin: auto;
+  }
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 225px;
+  transition: all 0.3s ease-in-out;
+  background-color: rgba(0, 107, 179, 0.027);
+  outline: none;
+  overflow: hidden;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  z-index: 999;
+}
+
+.card:hover {
+  cursor: pointer;
+
+  .overlay {
+    background-color: rgba(10, 87, 1, 0.236);
+  }
+  .img img {
+    scale: 1.1;
+    transform: rotateZ(3deg);
+  }
+}
+
+.overlay:hover::before {
+  animation: shine 0.9s ease-out;
+}
+
+.overlay::before {
+  content: "";
+  position: absolute;
+  width: 300px;
+  height: 100%;
+  background-image: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0) 30%,
+    rgb(255, 255, 255),
+    rgba(255, 255, 255, 0) 70%
+  );
+  top: 0;
+  left: -250px;
+  opacity: 0.8;
+}
+
+@keyframes shine {
+  0% {
+    left: -100px;
+  }
+
+  60% {
+    left: 100%;
+  }
+
+  to {
+    left: 100%;
+  }
+}
+
+.img {
+  width: 100%;
+  height: 14em;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background: linear-gradient(#7980c5, #9198e5);
+  overflow: hidden;
+  position: relative;
+}
+
+.img img {
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.9s;
+  transition: 0.5s;
+  width: 100%;
+}
+
+.auhter {
+  font-size: 25px;
+  font-weight: 800;
+  font-family: "Cairo", sans-serif;
+  margin-bottom: 10px;
+  color: #000000;
+}
+
+.text {
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: space-around;
+}
+
+.text .h3 {
+  font-family: system-ui;
+  font-size: medium;
+  font-weight: 500;
+  color: black;
+  text-align: center;
+}
+
+.text .p {
+  font-family: system-ui;
+  color: #999999;
+  font-size: 13px;
+  margin: 0px;
+  padding: 5px;
+}
+
+.word50 {
+  margin-bottom: 15px;
+}
+
+.more {
+  width: 100%;
+  font-family: system-ui;
+  font-size: 18px;
+  font-weight: 600;
+  color: #fefefe;
+  background-color: rgb(29, 142, 90);
+  border-radius: 10px;
+  text-align: center;
+  padding: 10px;
+  transition: 0.4s;
+}
+
+.more:hover {
+  background-color: rgb(243, 184, 21);
+  color: #000;
+}

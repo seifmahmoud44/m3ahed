@@ -1,0 +1,11 @@
+.section1{
+    height: 100vh;
+}
+
+.carouselOverlay{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background-image: linear-gradient(to bottom, #01250aa1 5%, #000000be);
+    z-index: 1;
+}

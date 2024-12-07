@@ -1,0 +1,16 @@
+.largeCircle,
+.smallCircle{
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid rgb(116, 247, 90);
+  position: fixed;
+  pointer-events: none;
+  transition: transform .08s;
+  z-index: 99999999999;
+}
+.smallCircle{
+  width: 16px;
+  height: 16px;
+  background-color: rgb(90, 247, 103);
+}

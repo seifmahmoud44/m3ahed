@@ -1,0 +1,65 @@
+.mySwiperMain {
+  background-color: white;
+  position: relative;
+}
+
+.mySwiperMain .swiper-slide {
+  overflow: hidden;
+  position: relative;
+}
+.mySwiperMain .swiper-slide img {
+  transition: all 3s ease;
+
+  clip-path: inset(0 0 0 100%);
+  transition-delay: clip 0.8s;
+}
+
+.mySwiperMain .swiper-slide h1 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 40px;
+  text-align: center;
+  font-weight: 700;
+  z-index: 999999;
+  clip-path: inset(0 0 0 100%);
+  transition: all 2s ease;
+  transition-delay: 1.8s;
+}
+.mySwiperMain .swiper-slide div {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 110%;
+  height: 110%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.6);
+  transition: all 3s ease;
+
+  clip-path: inset(0 0 0 100%);
+  transition-delay: clip 0.8s;
+  z-index: 9;
+}
+.mySwiperMain .swiper-slide.swiper-slide-active img {
+  clip-path: inset(0 0 0 0);
+  transform: scale(1.1);
+}
+.mySwiperMain .swiper-slide.swiper-slide-active div {
+  clip-path: inset(0 0 0 0);
+}
+
+.mySwiperMain .swiper-slide.swiper-slide-active h1 {
+  clip-path: inset(0 0 0 0);
+}
+
+@media (max-width: 700px) {
+  .mySwiperMain .swiper-slide img {
+    height: 100%;
+  }
+  .mySwiperMain .swiper-slide h1 {
+    font-size: 20px;
+    transform: translate(-50%, -180px);
+  }
+}

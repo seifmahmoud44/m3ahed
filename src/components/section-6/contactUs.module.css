@@ -1,0 +1,197 @@
+.contactSection {
+  height: 60vh;
+  background-image: url("../../../public/7489234.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.contactOverLay {
+  background: #0a1614eb;
+  height: 100%;
+  width: 100%;
+  padding: 20px 0;
+}
+.contactSection h1 {
+  font-family: "Cairo", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: rgb(38, 122, 22);
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.contactSection h1 span {
+  color: rgb(243, 184, 21);
+}
+
+.contactInformationWraper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  padding: 20px 0px;
+  height: 280px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.inputForm input {
+  padding: 10px;
+  margin: 10px 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.nameInput {
+  width: 200px;
+}
+
+.emailInput {
+  width: 200px;
+}
+
+.subjectInput {
+  width: 420px;
+}
+
+.messageInput {
+  width: 420px;
+  height: 100px;
+  margin: 10px 10px;
+}
+
+.submetBtn {
+  padding: 10px 20px;
+  margin: 0px 10px;
+  width: 420px;
+  border: none;
+  border-radius: 5px;
+  background: rgb(29, 142, 90);
+  color: white;
+  cursor: pointer;
+  display: block;
+  transition: all 0.1s ease-in;
+}
+
+.submetBtn:hover {
+  background: rgb(243, 184, 21);
+  color: black;
+}
+
+.socialMediaIcons {
+  background: rgba(0, 20, 5, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(20, 97, 3, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(0, 20, 5, 0.3);
+  width: 480px;
+  direction: rtl;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  background-color: rgba(43, 84, 29, 0.734);
+  border-radius: 16px;
+}
+
+.icons a {
+  border-radius: 50%;
+  padding: 10px 15px;
+  transition: all 0.2s ease-in-out;
+}
+
+.icons a:hover {
+  background: rgb(243, 184, 21);
+  color: rgb(62, 54, 44);
+}
+
+.socialMediaIcons p {
+  color: white;
+  margin-top: 15px;
+}
+
+.socialMediaIcons p span {
+  color: rgb(243, 184, 21);
+  font-size: 20px;
+  margin: -20px 10px;
+}
+
+@media screen and (max-width: 968px) {
+  .contactSection {
+    height: 100vh;
+  }
+
+  .contactInformationWraper {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 130px;
+    padding: 20px;
+  }
+
+  .inputForm {
+    margin-bottom: 10px;
+  }
+
+  .socialMediaIcons {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .contactSection {
+    height: 70vh;
+  }
+
+  .contactInformationWraper {
+    margin-top: 150px;
+    padding: 20px;
+  }
+
+  .socialMediaIcons {
+    width: 400px;
+    margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .nameInput {
+    width: 160px;
+  }
+
+  .emailInput {
+    width: 170px;
+  }
+
+  .subjectInput {
+    width: 350px;
+  }
+
+  .messageInput {
+    width: 350px;
+  }
+
+  .submetBtn {
+    margin: 0px 10px;
+    width: 350px;
+  }
+
+  .contactSection {
+    height: 90vh;
+  }
+
+  .contactInformationWraper {
+    margin-top: 150px;
+    padding: 20px;
+  }
+
+  .socialMediaIcons {
+    width: 350px;
+    margin-top: 30px;
+  }
+}
