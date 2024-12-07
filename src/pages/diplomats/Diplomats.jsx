@@ -3,7 +3,7 @@ const Diplomats = () => {
     <div>
       Diplomatsrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrlorem
       Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo aperiam
-      alias sequi autem dolorum tenetur corporis at animi minima earum quas
+      alias sequdsfi autem dolorum tenetur corporis at animi minima earum quas
       facilis dolore consequatur dolorem veritatis quis voluptatum blanditiis,
       fugit maiores pariatur, nam tempore veniam rem! Molestiae officia,
       similique fugit, dignissimos ullam quo fugiat sit mollitia officiis quis
